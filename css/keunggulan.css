@@ -1,0 +1,184 @@
+/* ─── KEUNGGULAN SECTION ─────────────────────────────── */
+.keunggulan {
+  background: var(--cream);
+  padding: 120px 40px;
+}
+
+.keunggulan-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ─── KIRI ───────────────────────────────────────────── */
+.keunggulan-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 120px;
+}
+
+.keunggulan-eyebrow {
+  font-family: "Jost", sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.keunggulan-eyebrow::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+}
+
+.keunggulan-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--dark);
+  letter-spacing: 0.02em;
+}
+
+.keunggulan-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.keunggulan-desc {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 320px;
+}
+
+/* tombol CTA */
+.keunggulan-cta {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: "Jost", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--dark);
+  background: var(--gold);
+  padding: 13px 28px;
+  border-radius: 2px;
+  border: 1px solid var(--gold);
+  align-self: flex-start;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.keunggulan-cta:hover {
+  background: transparent;
+  color: var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
+}
+
+/* ─── KANAN: KARTU ───────────────────────────────────── */
+.keunggulan-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.keunggulan-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+  transition: background 0.3s ease;
+}
+
+.keunggulan-card:first-child {
+  border-top: 1px solid rgba(201, 169, 110, 0.15);
+}
+
+/* nomor besar */
+.keunggulan-number {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1;
+  color: rgba(201, 169, 110, 0.2);
+  flex-shrink: 0;
+  width: 56px;
+  transition: color 0.3s ease;
+}
+
+.keunggulan-card:hover .keunggulan-number {
+  color: var(--gold);
+}
+
+/* konten teks */
+.keunggulan-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 6px;
+}
+
+.keunggulan-content h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--dark);
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+.keunggulan-content p {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* ─── RESPONSIF ──────────────────────────────────────── */
+@media (max-width: 900px) {
+  .keunggulan-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .keunggulan-left {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .keunggulan {
+    padding: 80px 20px;
+  }
+
+  .keunggulan-card {
+    gap: 20px;
+    padding: 32px 0;
+  }
+
+  .keunggulan-number {
+    font-size: 36px;
+    width: 44px;
+  }
+}

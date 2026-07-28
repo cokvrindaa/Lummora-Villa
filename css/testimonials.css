@@ -1,0 +1,138 @@
+/* css/testimonials.css */
+
+/* --- Container Utama Testimonial --- */
+.testimonials {
+  padding: 6rem 5%; /* Memberi jarak atas-bawah 6rem dan kiri-kanan 5% */
+  background-color: var(--cream); /* Warna latar belakang dari base.css */
+  overflow: hidden; /* Mencegah elemen keluar dari batasan section */
+}
+
+/* --- Header Bagian Testimonial (Judul & Subjudul) --- */
+.testimonials-header {
+  text-align: center; /* Membuat teks berada di tengah */
+  margin-bottom: 4rem; /* Memberi jarak antara header dengan slider */
+}
+
+.testimonials-eyebrow {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gold); /* Menggunakan warna emas */
+  text-transform: uppercase; /* Mengubah teks menjadi HURUF KAPITAL SEMUA */
+  letter-spacing: 2px; /* Memberi jarak antar huruf agar terlihat elegan */
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  color: var(--dark);
+  font-weight: 300;
+}
+
+.testimonials-title em {
+  font-style: italic; /* Membuat teks yang di dalam tag <em> menjadi miring */
+  color: var(--gold); /* Memberi aksen emas pada kata tertentu */
+}
+
+/* --- Area Slider --- */
+.testimonialsSwiper {
+  width: 100%;
+  padding-bottom: 4rem; /* Memberi ruang di bawah slider untuk tempat titik navigasi (pagination) */
+}
+
+/* --- Kartu Testimonial (Item Slide) --- */
+.testimonial-card {
+  background: var(--warm-white); /* Warna latar kartu (putih hangat) */
+  padding: 3rem 2rem; /* Jarak isi kartu ke tepi (atas-bawah 3rem, kiri-kanan 2rem) */
+  border-radius: 8px; /* Membuat ujung kartu membulat */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Memberi bayangan halus agar kartu terlihat timbul */
+  display: flex;
+  flex-direction: column; /* Menyusun isi kartu dari atas ke bawah */
+  justify-content: space-between; /* Mendorong bagian info pengarang (bawah) agar rata bawah jika teks ulasannya pendek */
+  height: auto;
+  border: 1px solid rgba(201, 169, 110, 0.2); /* Garis tepi tipis dengan warna emas transparan */
+  transition: transform 0.3s ease; /* Membuat efek halus saat ada perubahan gaya (seperti saat kursor diarahkan / hover) */
+}
+
+/* Efek saat pengguna mengarahkan kursor (hover) ke kartu */
+.testimonial-card:hover {
+  transform: translateY(-5px); /* Kartu akan sedikit naik ke atas sebanyak 5px saat di-hover */
+}
+
+/* --- Bintang Rating --- */
+.testimonial-stars {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px; /* Memberikan sedikit jarak antar bintang */
+}
+
+/* --- Teks Ulasan / Komentar --- */
+.testimonial-text {
+  font-family: "Jost", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8; /* Jarak antar baris teks agar mudah dibaca */
+  color: var(--text-muted);
+  font-style: italic; /* Teks miring untuk kesan kutipan */
+  margin-bottom: 2rem;
+  flex-grow: 1; /* Memaksa teks ulasan mengambil semua ruang kosong, mendorong profil orang ke bagian paling bawah kartu */
+}
+
+/* --- Bagian Bawah Kartu (Avatar & Nama) --- */
+.testimonial-author {
+  display: flex;
+  align-items: center; /* Membuat avatar dan nama sejajar di tengah secara vertikal */
+  gap: 1rem; /* Jarak antara avatar bulat dan teks nama */
+}
+
+/* --- Avatar Pembuat Ulasan --- */
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Membuat kotak menjadi lingkaran penuh */
+  background: var(--gold); /* Latar belakang lingkaran */
+  color: var(--warm-white); /* Warna inisial huruf */
+  display: flex;
+  align-items: center; /* Meratakan inisial secara vertikal di tengah */
+  justify-content: center; /* Meratakan inisial secara horizontal di tengah */
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.testimonial-name {
+  display: block; /* Agar nama dan asal muncul di baris berbeda (ke bawah) */
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+.testimonial-origin {
+  display: block;
+  font-family: "Jost", sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* --- Pagination (Titik Navigasi di Bawah) --- */
+.testimonials-pagination {
+  bottom: 0 !important; /* Menimpa gaya bawaan Swiper agar titik-titiknya ada di paling bawah padding kita */
+}
+
+/* Tampilan tiap titik saat BELUM aktif */
+.testimonials-pagination .swiper-pagination-bullet {
+  background-color: var(--gold-light);
+  opacity: 0.5; /* Agak transparan (buram) */
+  width: 10px;
+  height: 10px;
+}
+
+/* Tampilan titik yang SEDANG aktif (halaman saat ini) */
+.testimonials-pagination .swiper-pagination-bullet-active {
+  background-color: var(--gold);
+  opacity: 1; /* Menghilangkan efek transparan / lebih nyata */
+  width: 25px; /* Dibuat lebih lebar seperti bentuk pil (memanjang) */
+  border-radius: 5px; /* Membulatkan ujung pil */
+}
