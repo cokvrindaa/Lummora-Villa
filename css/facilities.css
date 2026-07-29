@@ -1,11 +1,11 @@
-/* ─── FACILITIES SECTION ─────────────────────────────── */
+/* ─── FACILITIES SECTION */
 .facilities {
   background: var(--dark);
   padding: 120px 0 80px;
   overflow: hidden;
 }
 
-/* ─── HEADER ─────────────────────────────────────────── */
+/* HEADER */
 .facilities-header {
   text-align: center;
   margin-bottom: 56px;
@@ -52,12 +52,12 @@
   color: var(--gold-light);
 }
 
-/* ─── SWIPER WRAPPER ─────────────────────────────────── */
+/*SWIPER WRAPPER */
 .facilities-swiper {
   padding: 0 40px 60px !important;
 }
 
-/* ─── SLIDE ──────────────────────────────────────────── */
+/* SLIDE */
 .facility-slide {
   width: 480px;
   border-radius: 2px;
@@ -70,7 +70,7 @@
   cursor: grabbing;
 }
 
-/* ─── GAMBAR ─────────────────────────────────────────── */
+/*  GAMBAR  */
 .facility-img {
   position: relative;
   aspect-ratio: 4 / 3;
@@ -90,7 +90,7 @@
 }
 
 
-/* ─── INFO TEKS DI BAWAH ─────────────────────────────── */
+/*  INFO TEKS DI BAWAH */
 .facility-info {
   background: #1f1a15;
   padding: 24px 28px 28px;
@@ -110,13 +110,13 @@
 
 .facility-info p {
   font-family: "Jost", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 1.7;
-  color: rgba(253, 250, 244, 0.45);
+  line-height: 1.8;
+  color: rgba(253, 250, 244, 0.6);
 }
 
-/* ─── NAVIGASI (panah + pagination) ─────────────────── */
+/*  NAVIGASI (panah + pagination)  */
 .facilities-nav {
   display: flex;
   align-items: center;
@@ -183,7 +183,7 @@
   transform: scale(1.3);
 }
 
-/* ─── RESPONSIF ──────────────────────────────────────── */
+/*  RESPONSIF  */
 @media (max-width: 640px) {
   .facilities {
     padding: 80px 0 60px;

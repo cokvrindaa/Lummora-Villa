@@ -1,4 +1,4 @@
-/* ─── HERO ───────────────────────────────────────────── */
+/* HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -79,7 +79,7 @@
 /* deskripsi singkat */
 .hero-desc {
   font-family: "Jost", sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.8;
   color: rgba(253, 250, 244, 0.7);
@@ -144,7 +144,7 @@
 }
 
 
-/* ─── RESPONSIF HERO ─────────────────────────────────── */
+/*  RESPONSIF HERO  */
 @media (max-width: 600px) {
   /* nonaktifkan parallax di mobile untuk performa */
   .hero {

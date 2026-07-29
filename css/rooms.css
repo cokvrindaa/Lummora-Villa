@@ -131,8 +131,8 @@
 
 .room-desc {
   font-family: "Jost", sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.8;
   color: var(--text-muted);
   margin-bottom: 1.5rem;
 }

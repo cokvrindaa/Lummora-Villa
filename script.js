@@ -32,14 +32,6 @@ mobileMenu.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Tutup menu mobile saat tombol Escape ditekan
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-    hamburger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-});
 
 //  Swiper Fasilitas 
 const facilitiesSwiper = new Swiper('.facilities-swiper', {

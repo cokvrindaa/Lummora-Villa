@@ -1,4 +1,4 @@
-/* ─── KEUNGGULAN SECTION ─────────────────────────────── */
+/*  KEUNGGULAN SECTION */
 .keunggulan {
   background: var(--cream);
   padding: 120px 40px;
@@ -13,7 +13,7 @@
   align-items: center;
 }
 
-/* ─── KIRI ───────────────────────────────────────────── */
+/*  Kolom KIRI  */
 .keunggulan-left {
   display: flex;
   flex-direction: column;
@@ -59,40 +59,14 @@
 
 .keunggulan-desc {
   font-family: "Jost", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
   color: var(--text-muted);
   max-width: 320px;
 }
 
-/* tombol CTA */
-.keunggulan-cta {
-  display: inline-block;
-  margin-top: 8px;
-  font-family: "Jost", sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--dark);
-  background: var(--gold);
-  padding: 13px 28px;
-  border-radius: 2px;
-  border: 1px solid var(--gold);
-  align-self: flex-start;
-  transition:
-    background 0.3s ease,
-    color 0.3s ease,
-    box-shadow 0.3s ease;
-}
 
-.keunggulan-cta:hover {
-  background: transparent;
-  color: var(--gold);
-  box-shadow: 0 0 0 1px var(--gold);
-}
 
 /* ─── KANAN: KARTU ───────────────────────────────────── */
 .keunggulan-right {
@@ -120,14 +94,9 @@
   font-size: 48px;
   font-weight: 300;
   line-height: 1;
-  color: rgba(201, 169, 110, 0.2);
+  color: var(--gold);
   flex-shrink: 0;
   width: 56px;
-  transition: color 0.3s ease;
-}
-
-.keunggulan-card:hover .keunggulan-number {
-  color: var(--gold);
 }
 
 /* konten teks */
@@ -149,13 +118,13 @@
 
 .keunggulan-content p {
   font-family: "Jost", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
   color: var(--text-muted);
 }
 
-/* ─── RESPONSIF ──────────────────────────────────────── */
+/* RESPONSIF*/
 @media (max-width: 900px) {
   .keunggulan-inner {
     grid-template-columns: 1fr;
