@@ -1,0 +1,32 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABEL WARNA & UKURAN */
+:root {
+  --cream: #f5f0e8;
+  --warm-white: #fdfaf4;
+  --gold: #c9a96e;
+  --gold-light: #e2c898;
+  --dark: #1a1612;
+  --text-muted: #504c48;
+  --nav-height: 80px;
+  --nav-scroll-height: 64px;
+}
+
+/* BASE BODY */
+body {
+  font-family: "Jost", sans-serif;
+  background: #e8e0d4;
+}
+
+/* BASE PARAGRAPH */
+p {
+  font-size: 16px;
+  line-height: 1.8;
+}

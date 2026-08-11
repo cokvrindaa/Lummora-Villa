@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lummora — Private Villa & Resort</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/facilities.css" />
+    <link rel="stylesheet" href="css/keunggulan.css" />
+    <link rel="stylesheet" href="css/stats.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
+    <link rel="stylesheet" href="css/history.css" />
+    <link rel="stylesheet" href="css/rooms.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/whatsapp.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar at-top" id="navbar">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="#" class="nav-logo">
+          <span class="logo-main">LUMMORA</span>
+          <span class="logo-sub">Private Villa &amp; Resort</span>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#keunggulan">Advantages</a></li>
+          <li><a href="#testimonials">Testimonial</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <!-- Divider + CTA -->
+        <div class="nav-divider"></div>
+        <a href="#rooms" class="btn-reserve">Reserve Rooms</a>
+
+        <!-- Hamburger -->
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      role="dialog"
+      aria-label="Mobile navigation"
+    >
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Service</a></li>
+      <li><a href="#facilities">Facilities</a></li>
+      <li><a href="#keunggulan">Advantages</a></li>
+      <li><a href="#testimonials">Testimonial</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <div class="mobile-divider"></div>
+      <a href="#rooms" class="mobile-cta">Reserve Rooms</a>
+    </div>
+
+    <!-- HERO  -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Bali, Indonesia</p>
+        <h1 class="hero-title">
+          Where Luxury<br />
+          <em>Meets Serenity</em>
+        </h1>
+        <p class="hero-desc">
+          Nikmati ketenangan abadi di villa eksklusif kami, dikelilingi alam
+          tropis yang memukau.
+        </p>
+        <div class="hero-actions">
+          <a href="#rooms" class="hero-btn-primary">Jelajahi Villa</a>
+          <a href="#facilities" class="hero-btn-secondary">Lihat Galeri</a>
+        </div>
+      </div>
+    </section>
+
+    <!--  STATS -->
+    <section class="stats" id="stats">
+      <div class="stats-container">
+        <div class="stat-item">
+          <h2 class="stat-number">5 Rb+</h2>
+          <p class="stat-label">Pelanggan</p>
+        </div>
+        <div class="stat-item">
+          <h2 class="stat-number">20</h2>
+          <p class="stat-label">Tahun Pengalaman</p>
+        </div>
+        <div class="stat-item">
+          <h2 class="stat-number">4.5</h2>
+          <p class="stat-label">Vila Bintang</p>
+        </div>
+      </div>
+    </section>
+
+    <!--  SERVICES  -->
+    <section class="services" id="services">
+      <!-- Header -->
+      <div class="services-header">
+        <p class="services-eyebrow">Apa yang Kami Tawarkan</p>
+        <h2 class="services-title">
+          Pengalaman yang Tak<br /><em>Terlupakan</em>
+        </h2>
+        <p class="services-desc">
+          Setiap detail dirancang untuk menghadirkan kemewahan yang autentik —
+          dari villa hingga momen pribadi Anda.
+        </p>
+      </div>
+
+      <!-- Grid Layanan -->
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/image/private-villa.jpg" alt="Private Villa" />
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Private Villa</h3>
+            <p class="service-desc">
+              Vila eksklusif dengan kolam renang pribadi, pemandangan alam
+              terbuka, dan privasi penuh untuk Anda.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-badge">Unggulan</div>
+          <div class="service-img">
+            <img src="/image/spa.jpg" alt="Spa & Wellness" />
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Spa & Wellness</h3>
+            <p class="service-desc">
+              Rasakan ketenangan jiwa lewat perawatan spa tradisional Bali yang
+              dilakukan oleh terapis berpengalaman.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/image/fine-dining.jpg" alt="Fine Dining" />
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Fine Dining</h3>
+            <p class="service-desc">
+              Sajian kuliner kelas dunia dengan bahan-bahan lokal segar,
+              dinikmati di bawah langit terbuka.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/image/layanan.webp" alt="Concierge 24/7" />
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Concierge 24/7</h3>
+            <p class="service-desc">
+              Tim concierge kami siap membantu kapan saja — dari transportasi
+              hingga reservasi eksklusif.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/image/hero.jpg" alt="Nature Experience" />
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Nature Experience</h3>
+            <p class="service-desc">
+              Jelajahi hutan tropis, sawah, dan pantai tersembunyi bersama
+              pemandu lokal kami yang berpengalaman.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img src="/image/eventandwedding.jpg" alt="Event & Wedding" />
+          </div>
+          <div class="service-body">
+            <h3 class="service-name">Event & Wedding</h3>
+            <p class="service-desc">
+              Wujudkan momen spesial Anda di lokasi yang memukau — pernikahan,
+              anniversary, hingga retreat bisnis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES  -->
+    <section class="facilities" id="facilities">
+      <div class="facilities-header">
+        <p class="facilities-eyebrow">Nikmati Setiap Sudut</p>
+        <h2 class="facilities-title">Fasilitas <em>Eksklusif</em></h2>
+      </div>
+
+      <div class="swiper facilities-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide facility-slide">
+            <div class="facility-img">
+              <img src="/image/hero.jpg" alt="Kolam Renang Pribadi" />
+              <div class="facility-overlay"></div>
+            </div>
+            <div class="facility-info">
+              <h3>Kolam Renang Pribadi</h3>
+              <p>
+                Berenang sepuasnya di kolam renang infinity yang menghadap alam
+                terbuka.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide facility-slide">
+            <div class="facility-img">
+              <img src="/image/garden-lounge.jpg" alt="Garden Lounge" />
+              <div class="facility-overlay"></div>
+            </div>
+            <div class="facility-info">
+              <h3>Garden Lounge</h3>
+              <p>
+                Area santai di tengah taman tropis yang asri dan menenangkan.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide facility-slide">
+            <div class="facility-img">
+              <img src="/image/outdoor-spa.jpg" alt="Outdoor Spa" />
+              <div class="facility-overlay"></div>
+            </div>
+            <div class="facility-info">
+              <h3>Outdoor Spa</h3>
+              <p>
+                Manjakan diri dengan perawatan spa di bawah naungan pepohonan.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide facility-slide">
+            <div class="facility-img">
+              <img src="/image/priavte-dinning.jpg" alt="Ruang Makan Privat" />
+              <div class="facility-overlay"></div>
+            </div>
+            <div class="facility-info">
+              <h3>Ruang Makan Privat</h3>
+              <p>Santap malam romantis dengan pemandangan bintang dan lilin.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide facility-slide">
+            <div class="facility-img">
+              <img src="/image/yoga-pavilion.jpg" alt="Yoga Pavilion" />
+              <div class="facility-overlay"></div>
+            </div>
+            <div class="facility-info">
+              <h3>Yoga Pavilion</h3>
+              <p>
+                Mulai pagi dengan sesi yoga di pavilion terbuka menghadap sawah.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN  -->
+    <section class="keunggulan" id="keunggulan">
+      <div class="keunggulan-inner">
+        <!-- Kiri: teks header -->
+        <div class="keunggulan-left">
+          <p class="keunggulan-eyebrow">Mengapa Lummora?</p>
+          <h2 class="keunggulan-title">
+            Alasan untuk<br /><em>Memilih Kami</em>
+          </h2>
+          <p class="keunggulan-desc">
+            Bukan sekadar tempat menginap — Lummora adalah pengalaman yang akan
+            selalu Anda kenang.
+          </p>
+        </div>
+
+        <!-- Kanan: 3 kartu keunggulan -->
+        <div class="keunggulan-right">
+          <div class="keunggulan-card">
+            <span class="keunggulan-number">01</span>
+            <div class="keunggulan-content">
+              <h3>Privasi Tanpa Kompromi</h3>
+              <p>
+                Setiap villa berdiri sendiri, dikelilingi taman pribadi. Tidak
+                ada tamu lain yang mengganggu ketenangan Anda.
+              </p>
+            </div>
+          </div>
+
+          <div class="keunggulan-card">
+            <span class="keunggulan-number">02</span>
+            <div class="keunggulan-content">
+              <h3>Lokasi Tersembunyi & Eksklusif</h3>
+              <p>
+                Tersembunyi di antara hamparan sawah Bali, jauh dari keramaian
+                namun tetap mudah dijangkau dari pusat kota.
+              </p>
+            </div>
+          </div>
+
+          <div class="keunggulan-card">
+            <span class="keunggulan-number">03</span>
+            <div class="keunggulan-content">
+              <h3>Layanan Personal 24 Jam</h3>
+              <p>
+                Dari butler pribadi hingga chef on-call — setiap permintaan Anda
+                adalah prioritas kami, kapan pun dibutuhkan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-header">
+        <p class="testimonials-eyebrow">Apa Kata Mereka</p>
+        <h2 class="testimonials-title">Pengalaman <em>Tamu Kami</em></h2>
+      </div>
+      <div class="swiper testimonialsSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Pengalaman yang luar biasa! Villa ini benar-benar memanjakan
+              kami. Pemandangan indah, fasilitas lengkap, dan staf yang sangat
+              ramah."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div>
+                <span class="testimonial-name">Andi Pratama</span>
+                <span class="testimonial-origin">Jakarta, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Kami menghabiskan honeymoon di sini dan tidak menyesal sama
+              sekali. Suasananya romantis, makanannya enak, dan kamarnya sangat
+              nyaman."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div>
+                <span class="testimonial-name">Sari & Budi</span>
+                <span class="testimonial-origin">Bandung, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-stars">★★★★☆</div>
+            <p class="testimonial-text">
+              "Perfect getaway from the busy city life. The pool was amazing and
+              the garden view from our room was breathtaking. Will definitely
+              come back!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">J</div>
+              <div>
+                <span class="testimonial-name">James Thornton</span>
+                <span class="testimonial-origin">Sydney, Australia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Pelayanannya bintang lima! Dari check-in sampai check-out
+              semuanya mulus. Tempatnya bersih, tenang, dan sangat recommended
+              untuk keluarga."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">R</div>
+              <div>
+                <span class="testimonial-name">Rina Kusuma</span>
+                <span class="testimonial-origin">Surabaya, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "An absolutely stunning villa. The spa treatment was heavenly and
+              the dining experience was top notch. A must-visit for luxury
+              travellers."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <span class="testimonial-name">Maria Chen</span>
+                <span class="testimonial-origin">Singapore</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination testimonials-pagination"></div>
+      </div>
+    </section>
+
+    <!-- HISTORY  -->
+    <section class="history" id="history">
+      <div class="history-inner">
+        <!-- Kiri: Konten Teks -->
+        <div class="history-left">
+          <p class="history-eyebrow">Perjalanan Kami</p>
+          <h2 class="history-title">Cerita di Balik<br /><em>Lummora</em></h2>
+
+          <!-- Galeri Gambar History -->
+          <div class="history-images">
+            <div class="history-img-main">
+              <img src="/image/ceo.jpg" alt="Lummora Villa History" />
+            </div>
+            <div class="history-img-secondary">
+              <img src="/image/touris.jpg" alt="Lummora Heritage" />
+              <img src="/image/much-villa.jpg" alt="Lummora Journey" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Kanan: Timeline -->
+        <div class="history-right">
+          <div class="history-timeline">
+            <div class="timeline-item">
+              <div class="timeline-year">2005</div>
+              <div class="timeline-event">Awal Mula</div>
+              <p class="timeline-desc">
+                Villa pertama Lummora dibuka dengan 2 kamar di tengah sawah
+                Ubud. Visi kami sederhana: privasi, alam, dan ketenangan.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2012</div>
+              <div class="timeline-event">Ekspansi & Penghargaan</div>
+              <p class="timeline-desc">
+                Menambah 8 villa baru dan meraih penghargaan "Best Boutique
+                Resort" dari Bali Tourism Board.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2018</div>
+              <div class="timeline-event">Spa & Wellness Center</div>
+              <p class="timeline-desc">
+                Membuka pusat spa dengan terapis bersertifikat internasional,
+                menawarkan perawatan holistik berbasis tradisi Bali.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2024</div>
+              <div class="timeline-event">Keberlanjutan & Inovasi</div>
+              <p class="timeline-desc">
+                Meluncurkan program ramah lingkungan: 100% energi surya, taman
+                organik, dan kemitraan dengan petani lokal.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS  -->
+    <section class="rooms" id="rooms">
+      <!-- Header -->
+      <div class="rooms-header">
+        <p class="rooms-eyebrow">Pilih Kenyamanan Anda</p>
+        <h2 class="rooms-title">Kamar & <em>Villa Tersedia</em></h2>
+        <p class="rooms-desc">
+          Setiap kamar dirancang dengan detail untuk memberikan pengalaman
+          menginap yang tak terlupakan.
+        </p>
+      </div>
+
+      <!-- Grid Kamar -->
+      <div class="rooms-grid">
+        <!-- Deluxe Villa -->
+        <div class="room-card">
+          <div class="room-img">
+            <img src="/image/deluxe-villa.jpg" alt="Deluxe Villa" />
+          </div>
+          <div class="room-info">
+            <h3 class="room-name">Deluxe Villa</h3>
+            <p class="room-type">Villa Eksklusif</p>
+            <p class="room-desc">
+              Villa luas dengan kolam renang pribadi, ruang tamu terpisah, dan
+              pemandangan sawah yang memukau.
+            </p>
+            <div class="room-features">
+              <span class="room-feature">2 Kamar Tidur</span>
+              <span class="room-feature">Kolam Pribadi</span>
+              <span class="room-feature">Dapur</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="room-price-amount">$250</span>
+                <span class="room-price-period">per malam</span>
+              </div>
+              <a
+                href="https://wa.me/6288976086371?text=Halo,%20saya%20tertarik%20dengan%20Deluxe%20Villa"
+                class="room-btn"
+                target="_blank"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Garden Suite - Featured -->
+        <div class="room-card">
+          <div class="room-img">
+            <span class="room-badge">Populer</span>
+            <img src="/image/hero.jpg" alt="Garden Suite" />
+          </div>
+          <div class="room-info">
+            <h3 class="room-name">Garden Suite</h3>
+            <p class="room-type">Suite Premium</p>
+            <p class="room-desc">
+              Suite romantis di tengah taman tropis dengan balkon pribadi dan
+              akses langsung ke spa.
+            </p>
+            <div class="room-features">
+              <span class="room-feature">1 King Bed</span>
+              <span class="room-feature">Bathtub</span>
+              <span class="room-feature">Balkon Pribadi</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="room-price-amount">$180</span>
+                <span class="room-price-period">per malam</span>
+              </div>
+              <a
+                href="https://wa.me/6288976086371?text=Halo,%20saya%20tertarik%20dengan%20Garden%20Suite"
+                class="room-btn"
+                target="_blank"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Pool View Room -->
+        <div class="room-card">
+          <div class="room-img">
+            <img src="/image/pool-view.jpg" alt="Pool View Room" />
+          </div>
+          <div class="room-info">
+            <h3 class="room-name">Pool View Room</h3>
+            <p class="room-type">Kamar Superior</p>
+            <p class="room-desc">
+              Kamar nyaman dengan pemandangan kolam utama dan akses mudah ke
+              semua fasilitas resort.
+            </p>
+            <div class="room-features">
+              <span class="room-feature">1 Queen Bed</span>
+              <span class="room-feature">AC & WiFi</span>
+              <span class="room-feature">Mini Bar</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="room-price-amount">$120</span>
+                <span class="room-price-period">per malam</span>
+              </div>
+              <a
+                href="https://wa.me/6288976086371?text=Halo,%20saya%20tertarik%20dengan%20Pool%20View%20Room"
+                class="room-btn"
+                target="_blank"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Honeymoon Villa -->
+        <div class="room-card">
+          <div class="room-img">
+            <span class="room-badge">Romantis</span>
+            <img src="/image/honey-moon.jpg " alt="Honeymoon Villa" />
+          </div>
+          <div class="room-info">
+            <h3 class="room-name">Honeymoon Villa</h3>
+            <p class="room-type">Villa Romantis</p>
+            <p class="room-desc">
+              Villa khusus untuk pasangan dengan dekorasi romantis, jacuzzi
+              outdoor, dan layanan private dinner.
+            </p>
+            <div class="room-features">
+              <span class="room-feature">1 King Bed</span>
+              <span class="room-feature">Jacuzzi</span>
+              <span class="room-feature">Candlelight Dinner</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="room-price-amount">$200</span>
+                <span class="room-price-period">per malam</span>
+              </div>
+              <a
+                href="https://wa.me/6288976086371?text=Halo,%20saya%20tertarik%20dengan%20Honeymoon%20Villa"
+                class="room-btn"
+                target="_blank"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Family Suite -->
+        <div class="room-card">
+          <div class="room-img">
+            <img src="/image/fammily.jpg" alt="Family Suite" />
+          </div>
+          <div class="room-info">
+            <h3 class="room-name">Family Suite</h3>
+            <p class="room-type">Suite Keluarga</p>
+            <p class="room-desc">
+              Suite luas untuk keluarga dengan ruang bermain anak, sofa bed, dan
+              akses ke taman bermain.
+            </p>
+            <div class="room-features">
+              <span class="room-feature">2 Kamar Tidur</span>
+              <span class="room-feature">Ruang Keluarga</span>
+              <span class="room-feature">Kid Friendly</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="room-price-amount">$220</span>
+                <span class="room-price-period">per malam</span>
+              </div>
+              <a
+                href="https://wa.me/6288976086371?text=Halo,%20saya%20tertarik%20dengan%20Family%20Suite"
+                class="room-btn"
+                target="_blank"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Tropical Bungalow -->
+        <div class="room-card">
+          <div class="room-img">
+            <img src="/image/tropical.jpg" alt="Tropical Bungalow" />
+          </div>
+          <div class="room-info">
+            <h3 class="room-name">Tropical Bungalow</h3>
+            <p class="room-type">Bungalow Tradisional</p>
+            <p class="room-desc">
+              Bungalow bergaya Bali dengan atap alang-alang, teras kayu, dan
+              nuansa tradisional yang autentik.
+            </p>
+            <div class="room-features">
+              <span class="room-feature">1 King Bed</span>
+              <span class="room-feature">Teras Luas</span>
+              <span class="room-feature">Desain Tradisional</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="room-price-amount">$150</span>
+                <span class="room-price-period">per malam</span>
+              </div>
+              <a
+                href="https://wa.me/6288976086371?text=Halo,%20saya%20tertarik%20dengan%20Tropical%20Bungalow"
+                class="room-btn"
+                target="_blank"
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FAQ  -->
+    <section class="faq" id="faq">
+      <div class="faq-header">
+        <p class="faq-eyebrow">Pertanyaan Umum</p>
+        <h2 class="faq-title">Yang Sering <em>Ditanyakan</em></h2>
+        <p class="faq-desc">
+          Temukan jawaban atas pertanyaan yang paling sering diajukan tentang
+          Lummora Private Villa & Resort.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            Apa saja fasilitas yang tersedia di villa?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Setiap villa dilengkapi dengan kolam renang pribadi, AC, WiFi
+              berkecepatan tinggi, TV layar datar, minibar, dapur lengkap (untuk
+              villa tertentu), dan kamar mandi mewah dengan bathtub. Kami juga
+              menyediakan layanan concierge 24/7, butler pribadi, dan akses ke
+              spa & wellness center.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Berapa jarak Lummora dari pusat kota dan bandara?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Lummora terletak 25 menit berkendara dari pusat Ubud dan 45 menit
+              dari Bandara Internasional Ngurah Rai. Kami menyediakan layanan
+              antar-jemput bandara dengan biaya tambahan. Tim kami akan membantu
+              mengatur transportasi Anda dengan nyaman.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah tersedia paket untuk honeymoon atau anniversary?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Ya! Kami memiliki paket spesial Honeymoon Villa yang sudah
+              termasuk dekorasi romantis, candlelight dinner, pijat pasangan,
+              dan sarapan di villa. Kami juga dapat mengatur kejutan khusus
+              seperti bunga, kue, atau foto session profesional sesuai
+              permintaan Anda.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah villa cocok untuk keluarga dengan anak-anak?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sangat cocok! Family Suite kami dirancang khusus untuk keluarga
+              dengan fasilitas kid-friendly seperti ruang bermain, kolam renang
+              dangkal, dan menu anak-anak. Kami juga menyediakan baby cot, high
+              chair, dan babysitting service atas permintaan (biaya tambahan).
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Bagaimana kebijakan pembatalan dan refund?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Pembatalan gratis hingga 7 hari sebelum check-in dengan refund
+              100%. Pembatalan 3-7 hari sebelumnya dikenakan biaya 50%, dan
+              kurang dari 3 hari tidak dapat di-refund. Untuk high season dan
+              libur nasional, kebijakan khusus berlaku. Silakan hubungi tim
+              reservasi kami untuk detail lebih lanjut.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Apakah tersedia layanan makanan dan minuman?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Ya, kami memiliki restoran fine dining yang menyajikan masakan
+              Indonesia, Asia, dan Barat. Kami juga menawarkan in-villa dining,
+              private chef, BBQ malam, dan romantic dinner setup. Semua menu
+              dapat disesuaikan dengan preferensi diet Anda (vegetarian, vegan,
+              halal, dll).
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Apa saja aktivitas yang bisa dilakukan di sekitar Lummora?
+          </button>
+          <div class="faq-answer">
+            <p>
+              Anda dapat menikmati yoga, trekking di sawah, bersepeda, cooking
+              class Bali, meditasi, spa treatment, atau mengunjungi pura dan air
+              terjun terdekat. Tim concierge kami siap membantu mengatur tour ke
+              Monkey Forest, Tegalalang Rice Terrace, Tirta Empul, atau
+              pantai-pantai di Bali.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Apakah Lummora ramah lingkungan?</button>
+          <div class="faq-answer">
+            <p>
+              Sangat! Kami berkomitmen pada keberlanjutan dengan menggunakan
+              100% energi surya, sistem pengolahan air limbah ramah lingkungan,
+              taman organik, dan mendukung petani lokal. Kami juga mengurangi
+              penggunaan plastik dan mendorong program daur ulang di seluruh
+              properti.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="footer" id="footer">
+      <div class="footer-main">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">LUMMORA</a>
+          <p class="footer-tagline">Private Villa & Resort</p>
+          <p class="footer-desc">
+            Nikmati kemewahan sejati di tengah ketenangan alam Bali. Tempat di
+            mana setiap momen menjadi kenangan abadi.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                ></path>
+                <polygon
+                  points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                ></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Jelajahi</h4>
+          <ul class="footer-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#rooms">Villa & Kamar</a></li>
+            <li><a href="#facilities">Fasilitas</a></li>
+            <li><a href="#testimonials">Testimoni</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+          <h4>Layanan</h4>
+          <ul class="footer-links">
+            <li><a href="#">Spa & Wellness</a></li>
+            <li><a href="#">Fine Dining</a></li>
+            <li><a href="#">Event & Wedding</a></li>
+            <li><a href="#">Airport Transfer</a></li>
+            <li><a href="#">Tour & Activity</a></li>
+            <li><a href="#">Private Chef</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+          <h4>Hubungi Kami</h4>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <p class="contact-text">
+                Jl. Raya Tegallalang, Ubud<br />Gianyar, Bali 80561
+              </p>
+            </div>
+            <div class="contact-item">
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              <p class="contact-text">
+                <a href="tel:+6288976086371">+62 812-3456-7890</a>
+              </p>
+            </div>
+            <div class="contact-item">
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <p class="contact-text">
+                <a href="mailto:info@lummora.com">info@lummora.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lummora Private Villa & Resort. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON-->
+    <a
+      href="https://wa.me/6288976086371?text=Halo%20Lummora,%20saya%20ingin%20bertanya%20tentang%20reservasi%20villa"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat WhatsApp"
+    >
+      <svg
+        class="whatsapp-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
