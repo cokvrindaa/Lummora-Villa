@@ -1,58 +1,130 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Lummora — Villa Booking Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Website villa dengan landing page publik dan panel admin (Filament) untuk mengelola data kamar, fasilitas, dan ketersediaan.
 
-## About Laravel
+## Tech Stack
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Backend:** Laravel 13
+- **Admin Panel:** Filament v5
+- **Database:** MySQL
+- **Frontend:** Blade + Vite
+- **PHP:** ^8.3
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requirement
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Pastikan sudah terinstall di komputer:
 
-## Learning Laravel
+- PHP >= 8.3 (dengan extension `zip` aktif)
+- Composer
+- Node.js & npm
+- MySQL (bisa pakai Laragon)
+- Git
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Cara Install (Clone dari GitHub)
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Ikuti urutan ini setiap kali clone project ke device baru.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
+### 1. Clone repository
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone <url-repo-github>
+cd <nama-folder>
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+### 2. Install dependency PHP
+```bash
+composer install
+```
 
-## Contributing
+### 3. Install dependency JavaScript
+```bash
+npm install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 4. Copy file environment
+```bash
+copy .env.example .env
+```
+> File `.env` tidak ikut ter-push ke GitHub (berisi kredensial), jadi harus dibuat ulang di setiap device.
 
-## Code of Conduct
+### 5. Generate application key
+```bash
+php artisan key:generate
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 6. Setup database
 
-## Security Vulnerabilities
+Buat database baru lewat phpMyAdmin (misal nama `lummora`), lalu sesuaikan `.env`:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=lummora
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 7. Jalankan migration
+```bash
+php artisan migrate
+```
 
-## License
+### 8. Buat symlink storage
+Wajib supaya foto kamar bisa diakses dari browser.
+```bash
+php artisan storage:link
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 9. Buat akun admin Filament
+Akun login tidak ikut pindah otomatis saat clone (data ada di database, bukan di kode), jadi perlu dibuat ulang:
+```bash
+php artisan make:filament-user
+```
+
+### 10. Build asset
+```bash
+npm run build
+```
+atau untuk mode development sambil edit-edit tampilan:
+```bash
+npm run dev
+```
+
+### 11. Jalankan server
+```bash
+php artisan serve
+```
+
+Buka browser:
+- Landing page: `http://127.0.0.1:8000`
+- Admin panel: `http://127.0.0.1:8000/admin`
+
+## Struktur Data Kamar
+
+Tabel `kamars` memiliki kolom:
+
+| Kolom | Tipe | Keterangan |
+|---|---|---|
+| `nama_kamar` | string | Nama kamar |
+| `tipe_kamar` | string | Tipe/kategori kamar |
+| `harga` | decimal(10,2) | Harga per malam |
+| `fasilitas` | text | Daftar fasilitas, dipisah koma |
+| `deskripsi` | text | Deskripsi kamar |
+| `periode` | string | Periode sewa |
+| `foto` | string | Path foto kamar (disk `public`) |
+| `stok` | integer | Jumlah kamar tersedia — jika `0`, kamar otomatis tidak tampil di landing page |
+
+## Catatan Penting
+
+- **Foto kamar** (folder `storage/app/public/kamar-foto`) biasanya tidak ikut ter-push ke GitHub (masuk `.gitignore`). Kalau mau foto lama ikut pindah ke device baru, salin foldernya secara manual.
+- **Data kamar** juga tidak ikut pindah otomatis via git (tersimpan di database). Untuk memindahkan data lama, export database dari device lama lewat phpMyAdmin (Export), lalu import ke device baru sebelum menjalankan `migrate`.
+- Setelah edit field/migration, jalankan `php artisan migrate:fresh` jika ingin reset ulang struktur tabel (⚠️ ini menghapus semua data).
+- Kalau ada error terkait extension `zip` saat `composer install`, aktifkan dulu `extension=zip` di `php.ini`.
+
+## Troubleshooting Cepat
+
+| Masalah | Solusi |
+|---|---|
+| Login admin gak respons sama sekali | `php artisan optimize:clear` lalu `php artisan filament:assets` |
+| Foto tidak muncul di landing page | Cek `php artisan storage:link` sudah dijalankan, dan `FileUpload` di form pakai `->disk('public')` |
+| Error "Class not found" pada Resource | Cek `use App\Models\Kamar;` sudah ada di file terkait |
+| Composer gagal install karena security advisory | Pastikan versi package yang di-require bukan versi yang kena advisory, gunakan versi terbaru yang stabil |
