@@ -90,6 +90,23 @@
   transform: scale(1.1);
 }
 
+/* Badge ketersediaan di pojok kanan atas gambar */
+.room-availability {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.45rem 0.9rem;
+  background: var(--gold);
+  color: var(--dark);
+  font-family: "Jost", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
 /* Badge untuk kamar unggulan */
 .room-badge {
   position: absolute;
