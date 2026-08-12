@@ -98,20 +98,6 @@ Buka browser:
 - Landing page: `http://127.0.0.1:8000`
 - Admin panel: `http://127.0.0.1:8000/admin`
 
-## Struktur Data Kamar
-
-Tabel `kamars` memiliki kolom:
-
-| Kolom | Tipe | Keterangan |
-|---|---|---|
-| `nama_kamar` | string | Nama kamar |
-| `tipe_kamar` | string | Tipe/kategori kamar |
-| `harga` | decimal(10,2) | Harga per malam |
-| `fasilitas` | text | Daftar fasilitas, dipisah koma |
-| `deskripsi` | text | Deskripsi kamar |
-| `periode` | string | Periode sewa |
-| `foto` | string | Path foto kamar (disk `public`) |
-| `stok` | integer | Jumlah kamar tersedia — jika `0`, kamar otomatis tidak tampil di landing page |
 
 ## Catatan Penting
 
