@@ -10,7 +10,22 @@
         </p>
       </div>
 
-      <!-- Grid Kamar -->
+      <!-- Grid Kama tidak tersedias -->
+      @if ($kamars->isEmpty())
+        <div class="rooms-empty">
+          <p class="rooms-empty-eyebrow">Belum Ada Pilihan</p>
+          <h3 class="rooms-empty-title">Belum ada kamar tersedia</h3>
+          <p class="rooms-empty-desc">
+            Kamar dan villa akan segera kami tampilkan kembali. Hubungi kami untuk informasi ketersediaan terbaru.
+          </p>
+          <a
+            href="https://wa.me/6288976086371?text={{ urlencode('Halo, saya ingin bertanya tentang ketersediaan kamar') }}"
+            class="room-btn"
+            target="_blank"
+            >Hubungi Kami</a
+          >
+        </div>
+      @else
       <div class="rooms-grid">
         <!-- Deluxe Villa -->
         @foreach ( $kamars as $kamar )
@@ -58,4 +73,5 @@
         </div>
         @endforeach
       </div>
+      @endif
     </section>
