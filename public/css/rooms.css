@@ -90,6 +90,25 @@
   transform: scale(1.1);
 }
 
+.room-card.sold-out {
+  opacity: 0.82;
+}
+
+.room-card.sold-out .room-img img {
+  filter: grayscale(0.7);
+}
+
+.room-card.sold-out:hover {
+  transform: translateY(-5px);
+}
+
+.room-btn.disabled {
+  background: #b8afa1;
+  color: var(--warm-white);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 /* Badge ketersediaan di pojok kanan atas gambar */
 .room-availability {
   position: absolute;
@@ -105,6 +124,11 @@
   letter-spacing: 1px;
   z-index: 2;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.room-availability.sold-out {
+  background: #d9534f;
+  color: var(--warm-white);
 }
 
 /* Badge untuk kamar unggulan */

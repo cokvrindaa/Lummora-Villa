@@ -14,9 +14,17 @@
       <div class="rooms-grid">
         <!-- Deluxe Villa -->
         @foreach ( $kamars as $kamar )
-        <div class="room-card">
+        {{-- Mengecek apakah kamar tersedia atau tidak bedasarkan data --}}
+        @php
+          $isSoldOut = (int) $kamar->kamar_tersedia <= 0;
+        @endphp
+        <div class="room-card {{ $isSoldOut ? 'sold-out' : '' }}">
           <div class="room-img">
-            <span class="room-availability">{{$kamar->kamar_tersedia}} kamar Tersedia</span>
+            @if ($isSoldOut)
+              <span class="room-availability sold-out">Kamar tidak tersedia</span>
+            @else
+              <span class="room-availability">{{ $kamar->kamar_tersedia }} kamar Tersedia</span>
+            @endif
             <img src="{{ Storage::url($kamar->foto) }}" alt="{{ $kamar->nama_kamar }}">
           </div>
           <div class="room-info">
@@ -35,12 +43,16 @@
                 <span class="room-price-amount">Rp{{ number_format($kamar->harga, 0, ',', '.') }}</span>
                 <span class="room-price-period">per {{ $kamar->periode }}</span>
               </div>
-              <a
-                href="https://wa.me/6288976086371?text={{ urlencode('Halo, saya tertarik dengan ' . $kamar->nama_kamar) }}"
-                class="room-btn"
-                target="_blank"
-                >Lihat Detail</a
-              >
+              @if ($isSoldOut)
+                <span class="room-btn disabled">Tidak Tersedia</span>
+              @else
+                <a
+                  href="https://wa.me/6288976086371?text={{ urlencode('Halo, saya tertarik dengan ' . $kamar->nama_kamar) }}"
+                  class="room-btn"
+                  target="_blank"
+                  >Lihat Detail</a
+                >
+              @endif
             </div>
           </div>
         </div>
