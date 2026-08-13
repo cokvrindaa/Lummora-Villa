@@ -26,8 +26,8 @@ Ikuti urutan ini setiap kali clone project ke device baru.
 
 ### 1. Clone repository
 ```bash
-git clone <url-repo-github>
-cd <nama-folder>
+git clone https://github.com/cokvrindaa/Lummora-Villa.git
+cd Lummora-Villa
 ```
 
 ### 2. Install dependency PHP
