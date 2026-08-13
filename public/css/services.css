@@ -159,6 +159,42 @@
   color: rgba(253, 250, 244, 0.5);
 }
 
+/* --- Empty State --- */
+.services-empty {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  background: var(--warm-white);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.services-empty-eyebrow {
+  font-family: "Jost", sans-serif;
+  font-size: 0.9rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.services-empty-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.services-empty-desc {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
 /*  RESPONSIF */
 @media (max-width: 1024px) {
   .services-grid {
