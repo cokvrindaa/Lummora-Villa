@@ -80,16 +80,7 @@ Akun login tidak ikut pindah otomatis saat clone (data ada di database, bukan di
 php artisan make:filament-user
 ```
 
-### 10. Build asset
-```bash
-npm run build
-```
-atau untuk mode development sambil edit-edit tampilan:
-```bash
-npm run dev
-```
-
-### 11. Jalankan server
+### 10. Jalankan server
 ```bash
 php artisan serve
 ```
@@ -97,6 +88,12 @@ php artisan serve
 Buka browser:
 - Landing page: `http://127.0.0.1:8000`
 - Admin panel: `http://127.0.0.1:8000/admin`
+
+### 11. Database seeder / menggunakan data dummy
+- Dikarenakan beberapa fitur seperti layanan, kamar, dan fasilitas itu deafultnya kosong, maka kalian boleh coba database seeder sebagai berikut ini untuk mengisi konten template :
+```bash
+php artisan db:seed
+```
 
 
 ## Catatan Penting
