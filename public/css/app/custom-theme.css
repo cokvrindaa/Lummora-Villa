@@ -1,0 +1,95 @@
+/* ─── LOGO SIDEBAR/TOPBAR ───────────────────────────────────────── */
+.lummora-brand__main,
+.lummora-brand__tagline {
+    white-space: nowrap;
+}
+
+.lummora-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lummora-brand__main {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    color: #ddac51;
+    line-height: 1;
+}
+
+.lummora-brand__tagline {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #8a8a8a;
+    margin-top: 4px;
+}
+
+.fi-logo {
+    display: none;
+}
+
+/* ─── LOGO LOGIN PAGE ────────────────────────────────────────────── */
+.fi-simple-header-heading {
+    display: none;
+}
+
+.lummora-brand-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.lummora-brand-login__main {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: #ddac51;
+    line-height: 1;
+}
+
+.lummora-brand-login__tagline {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: #8a8a8a;
+    margin-top: 6px;
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────────────── */
+@media (max-width: 640px) {
+    .lummora-brand__main {
+        font-size: 16px;
+    }
+
+    .lummora-brand__tagline {
+        font-size: 7px;
+        letter-spacing: 0.1em;
+    }
+}
+
+.fi-topbar > nav {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.fi-topbar-open-sidebar-btn {
+    order: -2 !important;
+}
+
+.lummora-brand {
+    order: -1 !important;
+    padding: 10px;
+    margin-right: auto !important;
+}

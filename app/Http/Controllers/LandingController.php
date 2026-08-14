@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Kamar;
 use App\Models\Layanan;
 use App\Models\Fasilitas;
+use App\Models\Faq;
+use App\Models\Testimoni;
 
 class LandingController extends Controller
 {
@@ -14,8 +16,10 @@ class LandingController extends Controller
         $kamars = Kamar::all(); // ambil semua kamar, UI akan handle status
         $layanans = Layanan::all();
         $fasilitas = Fasilitas::all();
-        
+        $faqs = Faq::orderBy('urutan')->get();
+        $testimonis = Testimoni::latest()->get();
+
         // data tersebut bawa ke index
-        return view('index', compact('kamars', 'layanans', 'fasilitas'));
+        return view('index', compact('kamars', 'layanans', 'fasilitas','faqs', 'testimonis'));
     }
 }
