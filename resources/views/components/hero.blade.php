@@ -13,7 +13,7 @@
         </p>
         <div class="hero-actions">
           <a href="#rooms" class="hero-btn-primary">Jelajahi Villa</a>
-          <a href="#facilities" class="hero-btn-secondary">Lihat Galeri</a>
+          <a href="#facilities" class="hero-btn-secondary">Fasilitas kami</a>
         </div>
       </div>
     </section>

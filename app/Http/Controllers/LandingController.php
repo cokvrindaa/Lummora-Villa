@@ -7,6 +7,7 @@ use App\Models\Layanan;
 use App\Models\Fasilitas;
 use App\Models\Faq;
 use App\Models\Testimoni;
+use App\Models\SocialMedia;
 
 class LandingController extends Controller
 {
@@ -18,8 +19,9 @@ class LandingController extends Controller
         $fasilitas = Fasilitas::all();
         $faqs = Faq::orderBy('urutan')->get();
         $testimonis = Testimoni::latest()->get();
+        $socialMedia = SocialMedia::first();
 
         // data tersebut bawa ke index
-        return view('index', compact('kamars', 'layanans', 'fasilitas','faqs', 'testimonis'));
+        return view('index', compact('kamars', 'layanans', 'fasilitas', 'faqs', 'testimonis', 'socialMedia'));
     }
 }

@@ -1,29 +1,26 @@
 <?php
 
-namespace App\Filament\Resources\Layanans\Tables;
+namespace App\Filament\Resources\SocialMedia\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Filament\Actions\DeleteAction;
 
-
-class LayanansTable
+class SocialMediaTable
 {
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('judul')
+                TextColumn::make('whatsapp')
                     ->searchable(),
-                TextColumn::make('deskripsi')
+                TextColumn::make('instagram')
                     ->searchable(),
-                IconColumn::make('unggulan')
-                    ->boolean(),
-                TextColumn::make('foto')
+                TextColumn::make('facebook')
+                    ->searchable(),
+                TextColumn::make('tiktok')
                     ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime()
@@ -39,7 +36,6 @@ class LayanansTable
             ])
             ->recordActions([
                 EditAction::make(),
-                DeleteAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([

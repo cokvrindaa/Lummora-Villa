@@ -4,6 +4,24 @@
         <p class="testimonials-eyebrow">Apa Kata Mereka</p>
         <h2 class="testimonials-title">Pengalaman <em>Tamu Kami</em></h2>
       </div>
+      
+      @if ($testimonis->isEmpty())
+        <div class="testimoni-empty">
+          <p class="testimoni-empty-eyebrow">Data Kosong</p>
+          <h3 class="testimoni-empty-title">Data Testimoni tak tersedia</h3>
+          <p class="testimoni-empty-desc">
+            Hubungi pengembang untuk menambahkan data Testimoni.
+          </p>
+          <a
+            href="https://wa.me/6288976086371?text={{ urlencode('Halo, saya ingin bertanya tentang fasilitas yang tersedia') }}"
+            class="facility-btn"
+            target="_blank"
+            >Hubungi Pengembang</a
+          >
+        </div>
+      @endif
+
+      
       <div class="swiper testimonialsSwiper">
         <div class="swiper-wrapper">
           @foreach ($testimonis as $testimoni)

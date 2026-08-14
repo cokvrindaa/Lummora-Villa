@@ -236,6 +236,14 @@
   pointer-events: all;
 }
 
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
 .mobile-menu a {
   font-family: "Cormorant Garamond", serif;
   font-size: 36px;

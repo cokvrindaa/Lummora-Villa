@@ -49,7 +49,7 @@
             </div>
 
             <div class="timeline-item">
-              <div class="timeline-year">2024</div>
+              <div class="timeline-year">2024 - sekarang</div>
               <div class="timeline-event">Keberlanjutan & Inovasi</div>
               <p class="timeline-desc">
                 Meluncurkan program ramah lingkungan: 100% energi surya, taman
