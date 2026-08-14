@@ -20,7 +20,7 @@ class LayananResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'Layanan';
+    protected static ?string $recordTitleAttribute = 'judul';
 
     public static function form(Schema $schema): Schema
     {

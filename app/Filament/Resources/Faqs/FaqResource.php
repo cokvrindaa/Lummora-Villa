@@ -20,7 +20,7 @@ class FaqResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'Faq';
+    protected static ?string $recordTitleAttribute = 'pertanyaan';
 
     public static function form(Schema $schema): Schema
     {
