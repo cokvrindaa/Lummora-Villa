@@ -1,9 +1,10 @@
 # Lummora — Villa Booking Website
 
-<p align="center">
-  <img src="public/image/LandingPage.png" alt="Landing Page" width="48%" />
-  <img src="public/image/CMS.png" alt="CMS Admin Panel" width="48%" />
-</p>
+### Landing Page
+![Landing Page](public/image/LandingPage.png)
+
+### Admin Panel (CMS)
+![Admin Panel CMS](public/image/CMS.png)
 
 Website villa dengan landing page publik dan panel admin (Filament) untuk mengelola data kamar, fasilitas, dan ketersediaan.
 
