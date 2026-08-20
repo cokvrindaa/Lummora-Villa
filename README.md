@@ -1,5 +1,10 @@
 # Lummora — Villa Booking Website
 
+<p align="center">
+  <img src="public/image/LandingPage.png" alt="Landing Page" width="48%" />
+  <img src="public/image/CMS.png" alt="CMS Admin Panel" width="48%" />
+</p>
+
 Website villa dengan landing page publik dan panel admin (Filament) untuk mengelola data kamar, fasilitas, dan ketersediaan.
 
 ## Tech Stack
